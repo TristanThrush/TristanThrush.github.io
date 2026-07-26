@@ -1,187 +1,245 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
 <head>
-  <link rel="icon" type="image/png" href="/tristan_thrush_fav.png">
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Tristan Thrush</title>
+  <meta name="description" content="Tristan Thrush — computer science PhD student at Stanford, research and selected papers.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      min-height: 100%;
+    }
+
     body {
-      font-family: Arial, Helvetica, sans-serif;
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 60px 20px;
+      background-color: #071327;
+      color: #000000;
+      overflow-x: hidden;
+    }
+
+    .page-wrap {
+      width: min(680px, calc(100% - 16px));
+      margin: 16px auto;
+    }
+
+    .outer-panel {
+      width: 100%;
+      border-collapse: collapse;
+      table-layout: fixed;
+      border-top: 2px solid #ffffff;
+      border-left: 2px solid #ffffff;
+      border-right: 2px solid #606060;
+      border-bottom: 2px solid #606060;
+    }
+
+    .inner-panel {
+      width: 100%;
+      border-collapse: collapse;
+      table-layout: fixed;
+    }
+
+    .content-cell {
+      overflow-wrap: anywhere;
+      word-wrap: break-word;
+    }
+
+    p {
+      line-height: 1.35;
+    }
+
+    .site-title {
+      font-size: 2.3rem;
+      margin: 0;
+      line-height: 1.1;
+    }
+
+    .subtitle, .top-links, .footer-note {
+      overflow-wrap: anywhere;
+      word-wrap: break-word;
+    }
+
+    .top-links {
       line-height: 1.7;
-      color: #222;
-      background-color: #ffffff;
     }
 
-    h1 {
-      text-align: center;
-      color: #1f8a3b;
-      font-size: 3rem;
-      margin-bottom: 20px;
+    li {
+      overflow-wrap: anywhere;
+      word-wrap: break-word;
+      margin-bottom: 24px;
     }
 
-    .links {
-      text-align: center;
-      margin-bottom: 50px;
+    .meta {
+      font-family: "Courier New", Courier, monospace;
+      font-size: 0.82rem;
     }
 
-    .links a {
-      margin: 0 12px;
-      color: #1f8a3b;
-      text-decoration: none;
-      font-weight: 500;
-      font-size: 1.05rem;
-    }
+    @media (max-width: 640px) {
+      .page-wrap {
+        width: calc(100% - 10px);
+        margin: 10px auto;
+      }
 
-    .links a:hover {
-      text-decoration: underline;
-    }
+      .content-padding {
+        padding: 14px !important;
+      }
 
-    .bio {
-      font-size: 1.08rem;
-      margin-bottom: 50px;
-    }
+      .site-title {
+        font-size: 1.9rem;
+      }
 
-    .papers h2 {
-      margin-bottom: 25px;
-      color: #111;
-    }
+      .subtitle, .top-links, p, li {
+        font-size: 0.95rem;
+      }
 
-    .paper {
-      margin-bottom: 30px;
-    }
-
-    .paper-title {
-      font-weight: bold;
-      font-size: 1.08rem;
-    }
-
-    .paper-title a {
-      color: #1f8a3b;
-      text-decoration: none;
-    }
-
-    .paper-title a:hover {
-      text-decoration: underline;
-    }
-
-    .paper-description {
-      margin-top: 6px;
-      color: #444;
+      .meta {
+        font-size: 0.75rem;
+      }
     }
   </style>
 </head>
 
-<body>
+<body
+ 
+  bgcolor="#071327"
+  text="#000000"
+  link="#0000CC"
+  vlink="#660099"
+  alink="#CC0000"
+>
 
-  <h1>Tristan Thrush</h1>
+<center>
 
-  <div class="links">
-    <a href="https://scholar.google.com/citations?user=qDDmq54AAAAJ" target="_blank">
-      Google Scholar
-    </a>
+  <br><br>
 
-    <a href="/tristan_cv.pdf" target="_blank">
-      CV
-    </a>
+  <div class="page-wrap">
+    <table class="outer-panel" cellpadding="0" cellspacing="0" border="1" bgcolor="#C0C0C0">
+      <tr>
+        <td>
 
-    <a href="https://github.com/TristanThrush" target="_blank">
-      Github
-    </a>
+          <table class="inner-panel" cellpadding="22" cellspacing="0" border="0" bgcolor="#C0C0C0">
+            <tr>
+              <td class="content-cell content-padding">
 
-    <a href="https://www.linkedin.com/in/tristan-thrush" target="_blank">
-      Linkedin
-    </a>
+                <center>
+                  <font face="Times New Roman, Times" size="+3">
+                    <b><div class="site-title">Tristan Thrush</div></b>
+                  </font>
 
-    <a href="https://x.com/TristanThrush" target="_blank">
-      Twitter
-    </a>
+                  <p class="subtitle">
+                    <tt>Researcher / Engineer</tt>
+                  </p>
+
+                  <p class="top-links">
+                    <font size="-1">
+                      <a href="https://scholar.google.com/citations?user=qDDmq54AAAAJ" target="_blank">Google Scholar</a> |
+                      <a href="/tristan_cv.pdf" target="_blank">CV</a> |
+                      <a href="https://github.com/TristanThrush" target="_blank">GitHub</a> |
+                      <a href="https://www.linkedin.com/in/tristan-thrush" target="_blank">LinkedIn</a> |
+                      <a href="https://x.com/TristanThrush" target="_blank">Twitter</a>
+                    </font>
+                  </p>
+                </center>
+
+                <hr size="3" noshade>
+
+                <a name="about"></a>
+                <font face="Arial, Helvetica" size="+1">
+                  <b>About Me</b>
+                </font>
+
+                <p>
+                  I'm a Computer Science PhD student at Stanford in the NLP group and AI lab,
+                  supervised by Tatsunori Hashimoto and Christopher Potts. Before that, I was a
+                  research engineer at Hugging Face. Before that, I was a research associate at
+                  Facebook AI Research, supervised by Douwe Kiela and then Adina Williams.
+                  And before that, I was a research associate at MIT Brain and Cognitive Sciences,
+                  supervised by Roger Levy.
+                </p>
+
+                <p>
+                  I received my MEng in computer science with a concentration in artificial
+                  intelligence under Patrick Winston at the MIT Computer Science and Artificial
+                  Intelligence Lab. I received my BS also at MIT in computer science, with a minor
+                  in linguistics and a minor in math. While I was an undergrad, I did research
+                  with the Perception Systems Group at NASA's Jet Propulsion Laboratory.
+                </p>
+
+                <p>
+                  I'm interested in AI. Specifically: natural language processing, computer vision,
+                  high-dimensional statistics, and data-centric AI methods. I have done several
+                  large-scale projects with a focus on the data side.
+                </p>
+
+                <a name="research"></a>
+                <hr size="2" noshade>
+
+                <font face="Arial, Helvetica" size="+1">
+                  <b>Selected Papers</b>
+                </font>
+
+                <ul>
+                  <li>
+                    <b>
+                      <a href="https://arxiv.org/abs/2604.08423" target="_blank">
+                        Synthetic Data for any Differentiable Target
+                      </a>
+                    </b><br>
+                    This one uses higher-order gradients to generate LLM training data for anything
+                    we want — it can even generate training data that can encode a QR code in model
+                    weights.
+                  </li>
+
+                  <li>
+                    <b>
+                      <a href="https://arxiv.org/abs/2409.05816" target="_blank">
+                        Perplexity Correlations
+                      </a>
+                    </b><br>
+                    This one has some fun math for pretraining data selection.
+                  </li>
+
+                  <li>
+                    <b>
+                      <a href="https://arxiv.org/abs/2204.03162" target="_blank">
+                        Multimodal Evaluation
+                      </a>
+                    </b><br>
+                    This one poses a still open challenge for word-order understanding in
+                    vision-language models.
+                  </li>
+
+                  <li>
+                    <b>
+                      <a href="https://ieeexplore.ieee.org/abstract/document/9381709" target="_blank">
+                        Rover Relocalization for Mars Sample Return
+                      </a>
+                    </b><br>
+                    There is simply nothing cooler than robots in space.
+                  </li>
+                </ul>
+
+                <hr size="3" noshade>
+
+                <center>
+                  <font size="-2">
+                    <div class="footer-note">
+                      
+                    </div>
+                  </font>
+                </center>
+
+              </td>
+            </tr>
+          </table>
+
+        </td>
+      </tr>
+    </table>
   </div>
 
-  <div class="bio">
-    <p>
-      I'm a Computer Science PhD student at Stanford in the NLP group and AI lab,
-      supervised by Tatsunori Hashimoto and Christopher Potts. Before that, I was a
-      research engineer at Hugging Face. Before that, I was a research associate at
-      Facebook AI Research, supervised by Douwe Kiela and then Adina Williams.
-      And before that, I was a research associate at MIT Brain and Cognitive Sciences,
-      supervised by Roger Levy.
-    </p>
+  <br><br>
 
-    <p>
-      I received my MEng in computer science with a concentration in artificial
-      intelligence under Patrick Winston at the MIT Computer Science and Artificial
-      Intelligence Lab. I received my BS also at MIT in computer science, with a minor
-      in linguistics and a minor in math. While I was an undergrad, I did research
-      with the Perception Systems Group at NASA's Jet Propulsion Laboratory.
-    </p>
-
-    <p>
-      I'm interested in AI. Specifically: natural language processing, computer vision,
-      high-dimensional statistics, and data-centric AI methods. I have done several
-      large-scale projects with a focus on the data side.
-    </p>
-  </div>
-
-  <div class="papers">
-    <h2>Selected Papers</h2>
-
-    <div class="paper">
-      <div class="paper-title">
-        <a href="https://arxiv.org/abs/2604.08423" target="_blank">
-          Synthetic Data for any Differentiable Target
-        </a>
-      </div>
-
-      <div class="paper-description">
-        This one uses higher-order gradients to generate LLM training data for anything
-        we want — it can even generate training data that can encode a QR code in model
-        weights.
-      </div>
-    </div>
-
-    <div class="paper">
-      <div class="paper-title">
-        <a href="https://arxiv.org/abs/2409.05816" target="_blank">
-          Perplexity Correlations
-        </a>
-      </div>
-
-      <div class="paper-description">
-        This one has some fun math for pretraining data selection.
-      </div>
-    </div>
-
-    <div class="paper">
-      <div class="paper-title">
-        <a href="https://arxiv.org/abs/2204.03162" target="_blank">
-          Multimodal Evaluation
-        </a>
-      </div>
-
-      <div class="paper-description">
-        This one poses a still open challenge for word-order understanding in
-        vision-language models.
-      </div>
-    </div>
-
-    <div class="paper">
-      <div class="paper-title">
-        <a href="https://ieeexplore.ieee.org/abstract/document/9381709" target="_blank">
-          Rover Relocalization for Mars Sample Return
-        </a>
-      </div>
-
-      <div class="paper-description">
-        There is simply nothing cooler than robots in space.
-      </div>
-    </div>
-
-  </div>
-
+</center>
 </body>
 </html>
